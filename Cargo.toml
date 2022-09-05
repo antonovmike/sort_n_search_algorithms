@@ -1,0 +1,38 @@
+[package]
+name = "sort_n_search_algorithms"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+#1
+[[bin]]
+name = "linear_search"
+path = "linear_search/main.rs"
+
+#2
+[[bin]]
+name = "binary_search"
+path = "binary_search/main.rs"
+
+#3
+[[bin]]
+name = "recursive_binary_search"
+path = "recursive_binary_search/main.rs"
+
+#4
+[[bin]]
+name = "selection_sort"
+path = "selection_sort/main.rs"
+
+#5
+[[bin]]
+name = "bubble_sort"
+path = "bubble_sort/main.rs"
+
+#6
+[[bin]]
+name = "quick_sort"
+path = "quick_sort/main.rs"

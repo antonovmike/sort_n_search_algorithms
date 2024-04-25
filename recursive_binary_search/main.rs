@@ -1,4 +1,4 @@
-// rucursive binary search
+// Recursive binary search
 
 fn main() {
     let array = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
@@ -7,7 +7,7 @@ fn main() {
 }
 fn recursive_binary_search(array: &[i32; 16], item: i32, start: usize, end: usize) -> i32 {
 	let mut count = 0;
-	let mut middle: usize = (start + end) / 2;
+	let middle: usize = (start + end) / 2;
 	count = count + 1;
 	if item == array[middle] {
 		println!("Count = {}", count);

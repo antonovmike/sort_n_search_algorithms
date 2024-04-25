@@ -1,5 +1,5 @@
-// binary_search O(log n 2) ("О" от логарифм "n" по основанию 2)
-// За 4 итерации можно найти любой элемент в массиве из 16 элементов
+// Binary search O(log n 2) (“O” from the logarithm of “n” on base 2)
+// In 4 iterations you can find any element in an array of 16 elements
 
 fn main() {
     let array = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
@@ -11,13 +11,12 @@ fn binary_search(array: &[i32; 16], item: i32) -> i32 {
 	let mut start = 0;
 	let mut end = array.len();
 	let mut middle;
-	let mut found = false;
 	let mut position = 0;
-	while found == false && start <= end {
+
+	while start <= end {
 		count = count + 1;
 		middle = (start + end) / 2;
 		if array[middle] == item {
-			found = true;
 			position = middle;
 			println!("Count = {}", count);
 			return position as i32

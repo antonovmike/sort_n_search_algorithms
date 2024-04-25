@@ -1,4 +1,3 @@
-// DOESN'T WORK
 // Selection sort, selection algorithm, bubble sorting, fast sorting
 // O(n*n)
 

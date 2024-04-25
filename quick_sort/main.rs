@@ -6,7 +6,7 @@
 fn main() {
     let mut numbers = vec![5, 2, 9, 3, 77, 5, 6];
     quicksort(&mut numbers);
-    println!("Sorted array: {:?}", numbers);
+    println!("Quicksort: {:?}", numbers);
 }
 
 fn quicksort<T: Ord>(arr: &mut [T]) {
